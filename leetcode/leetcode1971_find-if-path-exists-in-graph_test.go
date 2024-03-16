@@ -22,7 +22,7 @@ func validPath(n int, edges [][]int, source int, destination int) bool {
 
 // 其他解法1
 func o1ValidPath(n int, edges [][]int, source int, destination int) bool {
-	disjoint := graph.BuildDisjointSet(n)
+	disjoint := graph.BuildDisjointSet(n, false)
 	for _, edge := range edges {
 		v := edge[0]
 		w := edge[1]

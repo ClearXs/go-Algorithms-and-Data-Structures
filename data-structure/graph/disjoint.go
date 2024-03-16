@@ -6,9 +6,15 @@ type DisjointSet struct {
 	father []int
 }
 
-func BuildDisjointSet(n int) *DisjointSet {
-	father := make([]int, n)
-	for i := 0; i < n; i++ {
+func BuildDisjointSet(n int, firstOne bool) *DisjointSet {
+	length := n
+	initial := 0
+	if firstOne {
+		length = n + 1
+		initial = 1
+	}
+	father := make([]int, length)
+	for i := initial; i < length; i++ {
 		father[i] = i
 	}
 	return &DisjointSet{father: father}
@@ -40,7 +46,7 @@ func (d *DisjointSet) Union(w, v int) {
 
 // IsSame w is same v
 func (d *DisjointSet) IsSame(w, v int) bool {
-	wRoot := d.Find(w)
-	vRoot := d.Find(v)
-	return wRoot == vRoot
+	w = d.Find(w)
+	v = d.Find(v)
+	return w == v
 }

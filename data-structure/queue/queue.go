@@ -9,10 +9,15 @@ type Queue[T interface{}] interface {
 	Peek(index int) *T
 	PeekLast() *T
 	Size() int
+	Empty() bool
 }
 
 type Impl[T interface{}] struct {
 	items []*T
+}
+
+func (queue *Impl[T]) Empty() bool {
+	return queue.Size() == 0
 }
 
 // Push enqueue

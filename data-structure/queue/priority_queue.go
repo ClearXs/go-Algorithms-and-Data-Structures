@@ -6,6 +6,10 @@ type PriorityQueue[T interface{}] struct {
 	heap *heap.Heap[T]
 }
 
+func (p *PriorityQueue[T]) Empty() bool {
+	return p.Size() == 0
+}
+
 func (p *PriorityQueue[T]) Push(ele *T) {
 	p.heap.Insert(ele)
 }
