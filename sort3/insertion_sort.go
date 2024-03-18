@@ -1,18 +1,6 @@
-package sort_algorithm
+package sort3
 
-import (
-	"github.com/stretchr/testify/assert"
-	"testing"
-)
-
-func TestInsertionSort(t *testing.T) {
-	assert.Equal(t, EXPECT_N1, insertionSort(N1))
-	assert.Equal(t, EXPECT_N2, insertionSort(N2))
-	assert.Equal(t, EXPECT_N3, insertionSort(N3))
-	assert.Equal(t, EXPECT_N4, insertionSort(N4))
-}
-
-func insertionSort(nums []int) []int {
+func InsertionSort(nums []int) []int {
 	capacity := len(nums)
 	if capacity <= 1 {
 		return nums

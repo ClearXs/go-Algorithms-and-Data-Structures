@@ -1,18 +1,6 @@
-package sort_algorithm
+package sort3
 
-import (
-	"github.com/stretchr/testify/assert"
-	"testing"
-)
-
-func TestQuickSort(t *testing.T) {
-	assert.Equal(t, EXPECT_N1, quickSort(N1))
-	assert.Equal(t, EXPECT_N2, quickSort(N2))
-	assert.Equal(t, EXPECT_N3, quickSort(N3))
-	assert.Equal(t, EXPECT_N4, quickSort(N4))
-}
-
-func quickSort(nums []int) []int {
+func QuickSort(nums []int) []int {
 	return decompose(nums, 0, len(nums)-1)
 }
 

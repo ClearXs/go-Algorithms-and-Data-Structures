@@ -2,6 +2,7 @@ module leetcode
 
 require (
 	data-structure v0.0.1
+	sort3 v0.0.1
 	github.com/stretchr/testify v1.8.4
 )
 
@@ -12,5 +13,7 @@ require (
 )
 
 replace data-structure v0.0.1 => ../data-structure
+replace sort3 v0.0.1 => ./../sort3
+
 
 go 1.20

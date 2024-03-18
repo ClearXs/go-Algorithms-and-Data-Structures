@@ -1,19 +1,6 @@
-package sort_algorithm
+package sort3
 
-import (
-	"github.com/stretchr/testify/assert"
-	"testing"
-)
-
-func TestBubbleSort(t *testing.T) {
-	assert.Equal(t, EXPECT_N1, bubbleSort(N1))
-	assert.Equal(t, EXPECT_N2, bubbleSort(N2))
-	assert.Equal(t, EXPECT_N3, bubbleSort(N3))
-	assert.Equal(t, EXPECT_N4, bubbleSort(N4))
-
-}
-
-func bubbleSort(nums []int) []int {
+func BubbleSort(nums []int) []int {
 	capacity := len(nums)
 	if capacity <= 0 {
 		return nums

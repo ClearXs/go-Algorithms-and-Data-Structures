@@ -1,4 +1,4 @@
-module sort_algorithm
+module sort3
 
 require github.com/stretchr/testify v1.8.2
 

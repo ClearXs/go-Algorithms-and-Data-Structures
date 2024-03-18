@@ -1,4 +1,4 @@
-package sort_algorithm
+package sort3
 
 import "math/rand"
 
