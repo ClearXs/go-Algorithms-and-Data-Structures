@@ -56,6 +56,7 @@ solution following questions:
 - [27. Remove Element](https://leetcode.com/problems/remove-element)
 - [46. Permutations](https://leetcode.com/problems/permutations)
 - [47. Permutations II](https://leetcode.com/problems/permutations-ii)
+- [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray)
 - [77. Combinations](https://leetcode.com/problems/combinations)
 - [83. Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list)
 - [86. Partition List](https://leetcode.com/problems/partition-list)
@@ -66,4 +67,5 @@ solution following questions:
 - [131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning)
 - [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)
 - [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation)
+- [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum)
 - [376. Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence)
