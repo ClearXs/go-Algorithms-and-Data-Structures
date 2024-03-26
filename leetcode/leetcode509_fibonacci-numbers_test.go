@@ -26,7 +26,6 @@ func fib(n int) int {
 }
 
 func TestFib(t *testing.T) {
-
 	r1 := fib(2)
 	assert.Equal(t, 1, r1)
 
